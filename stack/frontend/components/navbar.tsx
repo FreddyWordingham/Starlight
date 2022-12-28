@@ -8,7 +8,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 const Navbar = () => {
     const [nav, setNav] = React.useState(false);
 
-    const handleNav = () => {
+    const toggleNav = () => {
         setNav(!nav);
     };
 
@@ -34,7 +34,7 @@ const Navbar = () => {
                             <li className="ml-10 text-sm">Contact</li>
                         </Link>
                     </ul>
-                    <div onClick={handleNav} className="md:hidden">
+                    <div onClick={toggleNav} className="md:hidden">
                         <AiOutlineMenu size={25} />
                     </div>
                 </div>
@@ -51,7 +51,7 @@ const Navbar = () => {
                     <div>
                         <div className="flex w-full items-center justify-between">
                             <Image src="/assets/logo/circle.svg" alt="logo" width="87" height="35" />
-                            <div onClick={handleNav} className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer">
+                            <div onClick={toggleNav} className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer">
                                 <AiOutlineClose />
                             </div>
                         </div>
