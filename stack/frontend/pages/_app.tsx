@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 
+import Index from "./index";
+
 export default function App({ Component, pageProps }: AppProps) {
-    return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+    return <index />;
 }
