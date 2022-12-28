@@ -56,7 +56,14 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className="border-b border-gray-300 my-4">
-                            <p className="w-[85%] md:w-[90%] py-4">Let's create something fantastic</p>
+                            <p
+                                className="w-[85%] md:w-[90%] py-4 text-2xl font-semibold bg-gradient-to-r bg-clip-text  text-transparent 
+            from-indigo-500 via-purple-500 to-indigo-500
+            animate-text
+            "
+                            >
+                                Freddy Wordingham
+                            </p>
                         </div>
                     </div>
                     <div>
