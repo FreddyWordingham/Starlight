@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <div className="fixed w-full h-20 shadow-xl z-[1]">
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-                <Image src="/assets/logo/circle.svg" alt="navbar logo" width="125" height="50" />
+                <Image src="/assets/logo/square.svg" alt="navbar logo" width="82" height="40" />
                 <div>
                     <ul className="hidden md:flex uppercase">
                         <Link href="/">
