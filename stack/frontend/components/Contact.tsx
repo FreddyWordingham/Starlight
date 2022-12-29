@@ -1,8 +1,7 @@
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import React from "react";
+
+import Socials from "./Socials";
 
 const Contact = () => {
     return (
@@ -33,20 +32,7 @@ const Contact = () => {
                                 <p className="uppercase pt-8">Connect with me</p>
                             </div>
                             <div>
-                                <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                                        <FaLinkedinIn size={30} />
-                                    </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                                        <FaGithub size={30} />
-                                    </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                                        <AiOutlineMail size={30} />
-                                    </div>
-                                    <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                                        <BsFillPersonLinesFill size={30} />
-                                    </div>
-                                </div>
+                                <Socials />
                             </div>
                         </div>
                     </div>

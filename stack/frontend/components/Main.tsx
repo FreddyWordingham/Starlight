@@ -3,6 +3,8 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import React from "react";
 
+import Socials from "./Socials";
+
 const Main = () => {
     return (
         <div className="w-full h-screen text-center">
@@ -16,20 +18,7 @@ const Main = () => {
                         </span>
                     </h1>
                     <p>Let&lsquo;s create something</p>
-                    <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                            <FaLinkedinIn size={30} />
-                        </div>
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                            <FaGithub size={30} />
-                        </div>
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                            <AiOutlineMail size={30} />
-                        </div>
-                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                            <BsFillPersonLinesFill size={30} />
-                        </div>
-                    </div>
+                    <Socials />
                 </div>
             </div>
         </div>
