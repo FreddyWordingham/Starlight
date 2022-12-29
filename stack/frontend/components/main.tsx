@@ -1,3 +1,6 @@
+import { AiOutlineMail } from "react-icons/ai";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import React from "react";
 
 const Main = () => {
@@ -21,9 +24,23 @@ const Main = () => {
                         <span className="italic">move fast, fail fast, learn fast</span> and we have fun doing it!
                     </p>
                     <p>
-                        There is nothing like software. A medium of pure ideas where an artist can craft whatever they imagine without the limitations of
-                        reality. This is where I&lsquo;ll share some of my experiments.
+                        There is nothing like the medium of pure ideas that is software, where an artist can craft whatever they imagine without the limitations
+                        of reality. This is where I&lsquo;ll share some of my experiments.
                     </p>
+                    <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+                            <FaLinkedinIn size={30} />
+                        </div>
+                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+                            <FaGithub size={30} />
+                        </div>
+                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+                            <AiOutlineMail size={30} />
+                        </div>
+                        <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+                            <BsFillPersonLinesFill size={30} />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
