@@ -15,18 +15,7 @@ const Main = () => {
                             Freddy
                         </span>
                     </h1>
-                    <p className="py-4">
-                        I lead a team of excellent, creative and compassionate individuals at{" "}
-                        <a className="font-bold" href="https://digilab.co.uk">
-                            digiLab
-                        </a>
-                        . We&lsquo;re building cutting edge tools which make it simple to build and deploy probabilistic AI. We like to{" "}
-                        <span className="italic">move fast, fail fast, learn fast</span> and we have fun doing it!
-                    </p>
-                    <p>
-                        There is nothing like the medium of pure ideas that is software, where an artist can craft whatever they imagine without the limitations
-                        of reality. This is where I&lsquo;ll share some of my experiments.
-                    </p>
+                    <p>Software is a joy. I hope I can share some with you.</p>
                     <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                         <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
                             <FaLinkedinIn size={30} />
