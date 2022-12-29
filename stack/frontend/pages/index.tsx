@@ -1,6 +1,7 @@
 import Head from "next/head";
 
 import About from "./about";
+import Contact from "../components/Contact";
 import Main from "./main";
 import Navbar from "../components/navbar";
 import Projects from "../components/projects";
@@ -20,6 +21,7 @@ export default function Home() {
             <About />
             <Skills />
             <Projects />
+            <Contact />
         </>
     );
 }
