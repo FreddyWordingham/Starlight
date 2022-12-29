@@ -9,7 +9,7 @@ const About = () => {
                     <span className="uppercase text-xl tracking-widest font-semibold bg-gradient-to-r bg-clip-text  text-transparent from-indigo-500 via-purple-500 to-indigo-500 animate-text">
                         About
                     </span>
-                    <p className="py-4">// Science is science, programming is art</p>
+                    <p className="py-4">-- Mathematics is a science, programming is an art</p>
                     <div className="text-gray-600">
                         <p className="py-2">
                             What feels like a long time ago, I went to the University of Exeter to study Physics and Astrophysics. It was an easy choice. We are
@@ -23,7 +23,7 @@ const About = () => {
                         <p className="py-2">
                             Telescopes observe the heavens, however the only tool Astrophysicists have to experiment on the universe is code. During my Masters
                             I developed a piece of software which simulates how light propagates through a planetary atmosphere. Using this tool we can generate
-                            synthetic lightcurves - changes in observed brightness as an exoplanet orbits its star. By matching these curves to observed data,
+                            synthetic light curves - changes in observed brightness as an exoplanet orbits its star. By matching these curves to observed data,
                             we can the determine the physical properties of exoplanets and their atmospheres. I fell in completely in love with programming. I
                             wanted to build things. I wanted to make things that people could use. I wanted to make things that people could enjoy.
                         </p>

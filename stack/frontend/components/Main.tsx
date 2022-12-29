@@ -10,12 +10,12 @@ const Main = () => {
                 <div className="max-w-[70%] m-auto text-grey-600">
                     <p className="uppercase text-sm tracking-widest">Welcome</p>
                     <h1 className="py-4 text-gray-700">
-                        Hi, I&lsquo;m{" "}
+                        Hi, Im{" "}
                         <span className="font-semibold bg-gradient-to-r bg-clip-text  text-transparent from-indigo-500 via-purple-500 to-indigo-500 animate-text">
                             Freddy
                         </span>
                     </h1>
-                    <p>Let's create something</p>
+                    <p>Let&lsquo;s create something</p>
                     <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
                         <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-300">
                             <FaLinkedinIn size={30} />

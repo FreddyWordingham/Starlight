@@ -9,7 +9,7 @@ const Projects = () => {
                 <span className="uppercase text-xl tracking-widest font-semibold bg-gradient-to-r bg-clip-text  text-transparent from-indigo-500 via-purple-500 to-indigo-500 animate-text">
                     Projects
                 </span>
-                <h2 className="py-4">Things I've built</h2>
+                <h2 className="py-4">Things I&lsquo;ve built</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                     <ProjectItem title="Placeholder: Crypto" backgroundImg={"/assets/projects/crypto.jpg"} projectUrl="/crypto" />
                     <ProjectItem title="Placeholder: Netflix" backgroundImg={"/assets/projects/netflix.jpg"} projectUrl="/crypto" />
