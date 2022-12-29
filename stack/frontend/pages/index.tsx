@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import Main from "../components/main";
 import Navbar from "../components/navbar";
 
 export default function Home() {
@@ -13,11 +14,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon_circ.ico" />
             </Head>
             <Navbar />
-            {/* <main>
-                <h1>
-                    Welcome to <a href="https://nextjs.org">Next.js!</a>
-                </h1>
-            </main> */}
+            <Main />
         </>
     );
 }
