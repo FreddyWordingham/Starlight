@@ -3,6 +3,7 @@ import Head from "next/head";
 import About from "./about";
 import Main from "./main";
 import Navbar from "../components/navbar";
+import Projects from "../components/projects";
 import Skills from "./skills";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
             <Main />
             <About />
             <Skills />
+            <Projects />
         </>
     );
 }
