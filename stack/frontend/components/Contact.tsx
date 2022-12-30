@@ -65,7 +65,7 @@ const ContactForm = () => {
                 </div>
                 <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Subject</label>
-                    <input className="border-2 rounded-lg p-3 flex border-gray-300" type="email" />
+                    <input className="border-2 rounded-lg p-3 flex border-gray-300" type="text" />
                 </div>
                 <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Message</label>
