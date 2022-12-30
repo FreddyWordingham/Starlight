@@ -3,21 +3,23 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Property = () => {
+const Mockingbird = () => {
     return (
         <div className="w-full">
             <div className="w-screen h-[30vh] lg:h-[40vh] relative">
                 <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80">
-                    <Image className="absolute z-[-1]" layout="fill" objectFit="cover" src="/assets/projects/property.jpg" alt="Property project" />
+                    <Image className="absolute z-[-1]" layout="fill" objectFit="cover" src="/assets/projects/mockingbird.jpg" alt="Property project" />
                     <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-                        <h2 className="py-2">Property Finder</h2>
-                        <h3>React JS / TailwindCSS</h3>
+                        <h2 className="py-2">Mockingbird</h2>
+                        <h3>React JS / Reduc / TailwindCSS / FastAPI</h3>
                     </div>
                 </div>
             </div>
             <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
                 <div className="col-span-4">
-                    <p>Mockingbird</p>
+                    <span className="uppercase text-xl tracking-widest font-semibold bg-gradient-to-r bg-clip-text text-transparent from-indigo-500 via-purple-500 to-indigo-500 animate-text">
+                        Mockingbird
+                    </span>
                     <h2>Overview</h2>
                     <p>This app was built using such and such...</p>
                     <p>We learnt that...</p>
@@ -59,4 +61,4 @@ const Property = () => {
     );
 };
 
-export default Property;
+export default Mockingbird;
