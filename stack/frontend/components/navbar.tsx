@@ -25,7 +25,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={shadow ? "fixed w-full h-20 shadow-xl ease-in duration-300 z-[1]" : "fixed w-full h-20 z-[1]"}>
+        <div className={shadow ? "fixed w-full h-20 shadow-xl z-[1]" : "fixed w-full h-20 z-[1]"}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Link href="/#">
                     <Image src="/assets/logo/square.svg" alt="navbar logo" width="82" height="40" />
@@ -55,13 +55,7 @@ const Navbar = () => {
             </div>
 
             <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 ease-in duration-300" : ""}>
-                <div
-                    className={
-                        nav
-                            ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-                            : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
-                    }
-                >
+                <div className={nav ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 " : "fixed left-[-100%] top-0 p-10 "}>
                     <div>
                         <div className="flex w-full items-center justify-between">
                             <Image src="/assets/logo/circle.svg" alt="logo" width="87" height="35" />
@@ -82,20 +76,30 @@ const Navbar = () => {
                     </div>
                     <div>
                         <ul className="uppercase">
-                            <Link href="/">
-                                <li className="py-4 text-sm">Home</li>
+                            <Link href="/#home">
+                                <li className="py-4 text-sm" onClick={() => setNav(false)}>
+                                    Home
+                                </li>
                             </Link>
-                            <Link href="/about">
-                                <li className="py-4 text-sm">About</li>
+                            <Link href="/#about">
+                                <li className="py-4 text-sm" onClick={() => setNav(false)}>
+                                    About
+                                </li>
                             </Link>
-                            <Link href="/skills">
-                                <li className="py-4 text-sm">Skills</li>
+                            <Link href="/#skills">
+                                <li className="py-4 text-sm" onClick={() => setNav(false)}>
+                                    Skills
+                                </li>
                             </Link>
-                            <Link href="/projects">
-                                <li className="py-4 text-sm">Projects</li>
+                            <Link href="/#projects">
+                                <li className="py-4 text-sm" onClick={() => setNav(false)}>
+                                    Projects
+                                </li>
                             </Link>
-                            <Link href="/contact">
-                                <li className="py-4 text-sm">Contact</li>
+                            <Link href="/#contact">
+                                <li className="py-4 text-sm" onClick={() => setNav(false)}>
+                                    Contact
+                                </li>
                             </Link>
                         </ul>
                         <div className="pt-40">
