@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
     return (
-        <div className="w-full md:h-screen p-2 flex items-center py-16">
+        <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
             <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
                 <div className="col-span-2">
                     <span className="uppercase text-xl tracking-widest font-semibold bg-gradient-to-r bg-clip-text  text-transparent from-indigo-500 via-purple-500 to-indigo-500 animate-text">

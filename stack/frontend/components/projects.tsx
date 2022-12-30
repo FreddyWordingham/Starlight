@@ -4,7 +4,7 @@ import React from "react";
 
 const Projects = () => {
     return (
-        <div className="w-full lg:h-screen">
+        <div id="projects" className="w-full lg:h-screen">
             <div className="max-w-[1240px] mx-auto px-2 py-16">
                 <span className="uppercase text-xl tracking-widest font-semibold bg-gradient-to-r bg-clip-text  text-transparent from-indigo-500 via-purple-500 to-indigo-500 animate-text">
                     Projects

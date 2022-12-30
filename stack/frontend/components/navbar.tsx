@@ -27,22 +27,24 @@ const Navbar = () => {
     return (
         <div className={shadow ? "fixed w-full h-20 shadow-xl ease-in duration-300 z-[1]" : "fixed w-full h-20 z-[1]"}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-                <Image src="/assets/logo/square.svg" alt="navbar logo" width="82" height="40" />
+                <Link href="/#">
+                    <Image src="/assets/logo/square.svg" alt="navbar logo" width="82" height="40" />
+                </Link>
                 <div>
                     <ul className="hidden md:flex uppercase">
-                        <Link href="/">
+                        <Link href="/#home">
                             <li className="ml-10 text-sm">Home</li>
                         </Link>
-                        <Link href="/about">
+                        <Link href="/#about">
                             <li className="ml-10 text-sm">About</li>
                         </Link>
-                        <Link href="/skills">
+                        <Link href="/#skills">
                             <li className="ml-10 text-sm">Skills</li>
                         </Link>
-                        <Link href="/projects">
+                        <Link href="/#projects">
                             <li className="ml-10 text-sm">Projects</li>
                         </Link>
-                        <Link href="/contact">
+                        <Link href="/#contact">
                             <li className="ml-10 text-sm">Contact</li>
                         </Link>
                     </ul>
