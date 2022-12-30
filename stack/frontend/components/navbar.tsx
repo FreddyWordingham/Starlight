@@ -1,4 +1,5 @@
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -8,6 +9,19 @@ import Socials from "./Socials";
 const Navbar = () => {
     const [nav, setNav] = React.useState(false);
     const [shadow, setShadow] = React.useState(false);
+    const [navBg, setNavBg] = React.useState("#ecf0f3");
+    const [linkCol, setLinkCol] = React.useState("#1f2937");
+    const router = useRouter();
+
+    React.useEffect(() => {
+        if (router.asPath === "/antler" || router.asPath === "/arctk" || router.asPath === "/mockingbird" || router.asPath === "/twinlab") {
+            setNavBg("transparent");
+            setLinkCol("#ecf0f3");
+        } else {
+            setNavBg("#ecf0f3");
+            setLinkCol("#1f2937");
+        }
+    }, [router.asPath]);
 
     const toggleNav = () => {
         setNav(!nav);
@@ -25,13 +39,16 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={shadow ? "fixed w-full h-20 shadow-xl z-2" : "fixed w-full h-20 z-[1]"}>
+        <div
+            style={{ backgroundColor: `${navBg}` }}
+            className={shadow ? "fixed w-full h-20 shadow-xl ease-in duration-300" : "fixed w-full h-20 shadow-xs ease-in duration-300"}
+        >
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Link href="/#">
                     <Image src="/assets/logo/square.svg" alt="navbar logo" width="82" height="40" />
                 </Link>
                 <div>
-                    <ul className="hidden md:flex uppercase">
+                    <ul style={{ color: `${linkCol}` }} className="hidden md:flex uppercase">
                         <Link href="/#home">
                             <li className="ml-10 text-sm">Home</li>
                         </Link>
