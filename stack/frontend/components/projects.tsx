@@ -11,10 +11,10 @@ const Projects = () => {
                 </span>
                 <h2 className="py-4">Things I&lsquo;ve built</h2>
                 <div className="grid md:grid-cols-2 gap-8">
-                    <ProjectItem title="Placeholder: Crypto" backgroundImg={"/assets/projects/crypto.jpg"} projectUrl="/crypto" />
-                    <ProjectItem title="Placeholder: Netflix" backgroundImg={"/assets/projects/netflix.jpg"} projectUrl="/crypto" />
-                    <ProjectItem title="Placeholder: Property" backgroundImg={"/assets/projects/property.jpg"} projectUrl="/crypto" />
-                    <ProjectItem title="Placeholder: Twitch" backgroundImg={"/assets/projects/twitch.jpg"} projectUrl="/crypto" />
+                    <ProjectItem title="Antler" backgroundImg={"/assets/projects/antler.jpg"} projectUrl="/antler" />
+                    <ProjectItem title="ARCTK" backgroundImg={"/assets/projects/arctk.jpg"} projectUrl="/arctk" />
+                    <ProjectItem title="Mockingbird" backgroundImg={"/assets/projects/mockingbird.jpg"} projectUrl="/mockingbird" />
+                    <ProjectItem title="twinLab" backgroundImg={"/assets/projects/twinlab.jpg"} projectUrl="/twinlab" />
                 </div>
             </div>
         </div>

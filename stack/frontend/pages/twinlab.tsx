@@ -17,7 +17,7 @@ const Property = () => {
             </div>
             <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
                 <div className="col-span-4">
-                    <p>Project</p>
+                    <p>twinLab</p>
                     <h2>Overview</h2>
                     <p>This app was built using such and such...</p>
                     <p>We learnt that...</p>
