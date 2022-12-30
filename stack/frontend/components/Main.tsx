@@ -1,6 +1,3 @@
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import React from "react";
 
 import Socials from "./Socials";
@@ -13,7 +10,7 @@ const Main = () => {
                     <p className="uppercase text-sm tracking-widest">Welcome</p>
                     <h1 className="py-4 text-gray-700">
                         Hi, Im{" "}
-                        <span className="font-semibold bg-gradient-to-r bg-clip-text  text-transparent from-indigo-500 via-purple-500 to-indigo-500 animate-text">
+                        <span className="font-semibold bg-gradient-to-r bg-clip-text text-transparent from-indigo-500 via-purple-500 to-indigo-500 animate-text">
                             Freddy
                         </span>
                     </h1>
