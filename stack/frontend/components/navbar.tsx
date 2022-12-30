@@ -25,7 +25,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className={shadow ? "fixed w-full h-20 shadow-xl z-[1]" : "fixed w-full h-20 z-[1]"}>
+        <div className={shadow ? "fixed w-full h-20 shadow-xl z-2" : "fixed w-full h-20 z-[1]"}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Link href="/#">
                     <Image src="/assets/logo/square.svg" alt="navbar logo" width="82" height="40" />
