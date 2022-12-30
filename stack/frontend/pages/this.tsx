@@ -3,26 +3,26 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Antler = () => {
+const This = () => {
     return (
         <div className="w-full">
             <div className="w-screen h-[30vh] lg:h-[40vh] relative">
                 <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80">
-                    <Image className="absolute z-[-1]" layout="fill" objectFit="cover" src="/assets/projects/antler.png" alt="Property project" />
+                    <Image className="absolute z-[-1]" layout="fill" objectFit="cover" src="/assets/projects/this.png" alt="Property project" />
                     <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-                        <h2 className="py-2">Antler</h2>
-                        <h3>Rust / Python</h3>
+                        <h2 className="py-2">This Website</h2>
+                        <h3>Next.JS / React / TailwindCSS</h3>
                     </div>
                 </div>
             </div>
             <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
                 <div className="col-span-4">
                     <span className="uppercase text-xl tracking-widest font-semibold bg-gradient-to-r bg-clip-text text-transparent from-indigo-500 via-purple-500 to-indigo-500 animate-text">
-                        Antler
+                        This Website
                     </span>
                     <h2>Overview</h2>
-                    <p>This app was built using such and such...</p>
-                    <p>We learnt that...</p>
+                    <p>This website was built using Next.js</p>
+                    <p>Next gives us the power to create a completely static site while still leveraging the expressiveness of React components.</p>
                     <button className="px-8 py-2 mt-4 mr-8">Demo</button>
                     <button className="px-8 py-2 mt-4">Code</button>
                 </div>
@@ -32,11 +32,15 @@ const Antler = () => {
                         <div className="grid grid-cols-2 md:grid-cols-1">
                             <p className="text-gray-600 py-2 flex items-center">
                                 <RiRadioButtonFill className="pr-2" />
-                                Rust
+                                Next.JS
                             </p>
                             <p className="text-gray-600 py-2 flex items-center">
                                 <RiRadioButtonFill className="pr-2" />
-                                Python
+                                React
+                            </p>
+                            <p className="text-gray-600 py-2 flex items-center">
+                                <RiRadioButtonFill className="pr-2" />
+                                TailwindCSS
                             </p>
                         </div>
                     </div>
@@ -49,4 +53,4 @@ const Antler = () => {
     );
 };
 
-export default Antler;
+export default This;
