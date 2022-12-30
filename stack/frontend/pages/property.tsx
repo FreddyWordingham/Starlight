@@ -51,8 +51,8 @@ const Property = () => {
                         </div>
                     </div>
                 </div>
-                <Link href="/">
-                    <p className="underline cursor-pointer">Home</p>
+                <Link href="/#projects">
+                    <p className="underline cursor-pointer">Back</p>
                 </Link>
             </div>
         </div>
