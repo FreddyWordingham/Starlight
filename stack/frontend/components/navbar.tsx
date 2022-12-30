@@ -7,13 +7,25 @@ import Socials from "./Socials";
 
 const Navbar = () => {
     const [nav, setNav] = React.useState(false);
+    const [shadow, setShadow] = React.useState(false);
 
     const toggleNav = () => {
         setNav(!nav);
     };
 
+    React.useEffect(() => {
+        const handleShadow = () => {
+            if (window.scrollY >= 90) {
+                setShadow(true);
+            } else {
+                setShadow(false);
+            }
+        };
+        window.addEventListener("scroll", handleShadow);
+    }, []);
+
     return (
-        <div className="fixed w-full h-20 shadow-xl z-[1]">
+        <div className={shadow ? "fixed w-full h-20 shadow-xl ease-in duration-300 z-[1]" : "fixed w-full h-20 z-[1]"}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Image src="/assets/logo/square.svg" alt="navbar logo" width="82" height="40" />
                 <div>
